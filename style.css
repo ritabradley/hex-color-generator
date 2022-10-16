@@ -2,6 +2,7 @@
 
 :root {
     --body-font: 'fira-sans', sans-serif;
+    --rounded-sm: 0.5rem;
     --code-font: 'fira-code', monospace;
     --fw-normal: 400;
     --fw-bold: 700;
@@ -28,4 +29,37 @@ body {
     font-weight: var(--fw-normal);
     justify-content: center;
     min-height: 100vh;
+}
+
+h1 {
+    margin: 4rem 0;
+}
+
+.container {
+    align-items: center;
+    background-color: #fff;
+    border-radius: var(--rounded-sm);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 30vh;
+    padding: 6rem;
+    width: 40vw;
+    margin: 4rem 0;
+}
+
+.hex-block {
+    align-items: center;
+    background-color: #343a40;
+    border-radius: var(--rounded-sm);
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    padding: 1.5rem;
+    width: 20vw;
+}
+
+.hex-code {
+    color: #fff;
+    font-family: var(--code-font);
 }
