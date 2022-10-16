@@ -20,7 +20,6 @@ html {
 
 body {
     align-items: center;
-    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
     color: #343a40;
     display: flex;
     flex-direction: column;
@@ -42,10 +41,10 @@ h1 {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 30vh;
+    height: 40vh;
     padding: 6rem;
     width: 40vw;
-    margin: 4rem 0;
+    margin: 1rem 0;
 }
 
 .hex-block {
@@ -62,4 +61,19 @@ h1 {
 .hex-code {
     color: #fff;
     font-family: var(--code-font);
+}
+
+.hex-generate {
+    background-color: #343a40;
+    border: none;
+    border-radius: var(--rounded-sm);
+    color: #fff;
+    font-size: 1.6rem;
+    margin: 2rem 0 0;
+    padding: 1rem 3rem;
+    transition: background-color 0.5s ease-in;
+}
+
+.hex-generate:hover {
+    background-color: #212529;
 }
